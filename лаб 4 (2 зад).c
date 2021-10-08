@@ -1,13 +1,18 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main (){
-    int a;
-    scanf ("%d", &a);
-    int b=1;
-    b = b>>15;
-    if (a&b)
-        printf ("1\n");
+
+int main(){
+    unsigned int b;
+    scanf("%d",&b);
+    b=b>>15;
+    b=(b&1);
+    if(b==1)
+        printf("15 bit=1");
     else
-        printf ("0\n");
-    return 0;
+        printf("15 bit=0");
+
+
+
+
+
 }
