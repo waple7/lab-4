@@ -2,12 +2,12 @@
 
 void main()
 {
-    int a=-4;
-    int b=-1;
-    int x;
-    scanf("%d", &x);
-    int result = a <= x && x <= b;
+    int left=-4;
+    int right=-1;
+    int number;
+    scanf("%d", &number);
+    int result = left <= number && number <= right;
 
 
-    printf("Number %d %d...%d :  %s  \n", x, a, b, result ? "yes":"no");
+    printf("Number %d %d...%d :  %s  \n", number, left, right, result ? "yes":"no");
 }
